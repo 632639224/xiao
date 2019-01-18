@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="/css/css.css">
+
+<!--    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>-->
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.nav_mini ul li').hover(function(){
+                $(this).find('.two_nav').show(100);
+            },function(){
+                $(this).find('.two_nav').hide(100);
+            });
+            getcc();
+        });
+        function getcc(){
+        var notHashCart  = '[[${session.sessionValue}]]';
+            if(notHashCart == null){
+                console.log(notHashCart);
+                var content = "<a href=''>你好,请登录</a>";
+                $("#login_span").html(content);
+
+            }
+            var content = "<a href=''>欢迎登陆</a>";
+            $("#login_span").html(content);
+
+
+
+
+        }
+    </script>
+</head>
+<body>
+<div class="top">
+    <div class="top_text">
+        <span id = "login_span"></span>
+        <a href="">用户注册</a>
+        <a href="">供应商登录</a>
+        <a href="">供应商注册</a>
+    </div>
+</div>
+<div class="top_img">
+    <img src="/images/top_img.jpg" alt="">
+</div>
+<div class="search">
+    <div class="logo"><img src="/images/ku.jpg" alt=""></div>
+    <div class="search_on">
+        <div class="se">
+            <input type="text" name="search" class="lf">
+            <input type="submit" class="clik" value="搜索">
+        </div>
+        <div class="se">
+            <a href="">取暖神奇</a>
+            <a href="">1元秒杀</a>
+            <a href="">吹风机</a>
+            <a href="">玉兰油</a>
+        </div>
+    </div>
+    <div class="card">
+        <a href="">购物车<div class="num">0</div></a>
+
+        <!--购物车商品-->
+        <div class="cart_pro">
+            <h6>最新加入的商品</h6>
+            <div class="one">
+                <img src="/images/lec1.png">
+                <span class="one_name">
+						商品名称商品名称商品名称商品名称
+					</span>
+                <span class="one_prece">
+						<b>￥20000</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;删除
+					</span>
+            </div>
+
+            <div class="one border">
+                <img src="/images/lec1.png">
+                <span class="one_name">
+						商品名称商品名称商品名称商品名称
+					</span>
+                <span class="one_prece">
+						<b>￥20000</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;删除
+					</span>
+            </div>
+            <div class="one border">
+                <img src="/images/lec1.png">
+                <span class="one_name">
+						商品名称商品名称商品名称商品名称
+					</span>
+                <span class="one_prece">
+						<b>￥20000</b><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;删除
+					</span>
+            </div>
+
+
+            <div class="gobottom">
+                共<span>2</span>件商品&nbsp;&nbsp;&nbsp;&nbsp;
+                共计￥<span>20000</span>
+                <button class="goprice">去购物车</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+<div class="menu">
+    <div class="nav">
+        <div class="navs">
+            <div class="left_nav">
+                全部商品分类
+                <div class="nav_mini">
+                    <ul>
+                        <li>
+                            <a href="">家用电器</a>
+                            <div class="two_nav">
+                                <a href="">11111</a>
+                                <a href="">11111</a>
+                                <a href="">11111</a>
+                                <a href="">11111</a>
+                                <a href="">11111</a>
+                                <a href="">11111</a>
+                                <a href="">11111</a>
+                                <a href="">11111</a>
+                                <a href="">11111</a>
+                                <a href="">11111</a>
+                                <a href="">11111</a>
+                            </div>
+                        </li>
+                        <li><a href="">手机、数码、通信</a></li>
+                        <li><a href="">电脑、办公</a></li>
+                        <li><a href="">家具、家居、家装</a></li>
+                        <li><a href="">男装、女装、内衣</a></li>
+                        <li><a href="">个户化妆</a></li>
+                        <li><a href="">鞋靴</a></li>
+                        <li><a href="">户外运动</a></li>
+                        <li><a href="">汽车</a></li>
+                        <li><a href="">母婴</a></li>
+                        <li><a href="">食品</a></li>
+                        <li><a href="">营养保健</a></li>
+                        <li><a href="">图书</a></li>
+                        <li><a href="">彩票</a></li>
+                        <li><a href="">理财</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul>
+                <li><a href="">服装城</a></li>
+                <li><a href="">美妆馆</a></li>
+                <li><a href="">超市</a></li>
+                <li><a href="">全球购</a></li>
+                <li><a href="">闪购</a></li>
+                <li><a href="">团购</a></li>
+                <li><a href="">拍卖</a></li>
+                <li><a href="">金融</a></li>
+                <li><a href="">智能</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="banner">
+    <div class="ban">
+        <img src="/images/banner.jpg" width="980" height="380" alt="">
+    </div>
+</div>
+
+
+</body>
+</html>
